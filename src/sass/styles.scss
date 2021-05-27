@@ -1,0 +1,46 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  text-align: center;
+  background-color: rgb(55, 128, 170);
+}
+
+.search {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 300px;
+  height: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.137);
+  border-radius: 3px;
+  font-size: 25px;
+  font-style: normal;
+}
+
+.country-name {
+  font-size: 30px;
+  margin-bottom: 100px;
+  letter-spacing: 0.1em;
+}
+
+.preview {
+  display: block;
+  text-align: left;
+  width: 500px;
+  margin: auto;
+}
+
+.preview-title {
+  font-size: 25px;
+  letter-spacing: 0.1em;
+}
+.country-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.country-list {
+  text-align: left;
+  font-size: larger;
+}
