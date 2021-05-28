@@ -8,7 +8,7 @@
     "start": "node index.js",
     "dev": "parcel src/index.html",
     "build": "parcel build src/*.html --public-url /goit-js-hw-12-countries/",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
   },
   "repository": {
