@@ -5,8 +5,11 @@
   "main": "index.js",
   "homepage": "https://AndriiLiubarskyi.github.io/goit-js-hw-12-countries",
   "scripts": {
-    "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-12-countries/"
+    "start": "node index.js",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/*.html --public-url /goit-js-hw-12-countries/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -27,6 +30,8 @@
     "sass": "^1.32.8"
   },
   "dependencies": {
+    "deploy-to-github-pages": "^1.0.1",
+    "github-pages-deploy-action": "^3.5.1",
     "lodash.debounce": "^4.0.8"
   }
 }
