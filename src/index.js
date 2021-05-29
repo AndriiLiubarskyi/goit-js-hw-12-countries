@@ -11,7 +11,9 @@ import '@pnotify/core/dist/PNotify.css';
 import '@pnotify/core/dist/BrightTheme.css';
 
 const inputSearch = e => {
-    const searchQuery = e.target.value;
+    const searchQuery = e.target.value.replace(/^\s+/g, '');
+  
+
     refs.countryMrkp.innerHTML = '';
 
     if (searchQuery.length < 1)
@@ -21,6 +23,7 @@ const inputSearch = e => {
     .then(infoShow)
     .catch(noticeInfo);
 };
+
 
 const infoShow = selectedСountry => {
     if (selectedСountry.length > 10) {
