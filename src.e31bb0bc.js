@@ -2894,8 +2894,12 @@ require("@pnotify/core/dist/BrightTheme.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// if (textarea.refs.search.charAt(0) === " ") {
+//     textarea.refs.search.value = "";
+// };
+// console.log(textInput);
 const inputSearch = e => {
-  const searchQuery = e.target.value;
+  const searchQuery = e.target.value.replace(/^\s+/g, '');
   _refs.default.countryMrkp.innerHTML = '';
   if (searchQuery.length < 1) return;
 
@@ -2954,7 +2958,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51965" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51810" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
