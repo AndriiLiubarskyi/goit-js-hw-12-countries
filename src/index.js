@@ -21,7 +21,6 @@ const inputSearch = e => {
 
     API.fetchCountries(searchQuery)
     .then(infoShow)
-    .catch(noticeInfo);
 };
 
 
